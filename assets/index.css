@@ -5,7 +5,10 @@ html, body, h1, h2, h3, h4, p {
   font-size: 100%;
   font: inherit;
 }
-
+/*  web fonts
+font-family: 'Oswald', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
 html {
   font-size: 16px;
   max-width: 90%;
@@ -14,21 +17,59 @@ html {
 img {
   max-width: 100%;
 }
-/*nav bar styling*/
-nav {
-  background-color: #f2f2f2;
-
-  height: 215px;
+/*nav & footer styling*/
+nav, footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 215px;
 }
+/*nav bar styling*/
+nav {
+  background-color: #f2f2f2;
+  opacity: ;
+  }
 nav p {
   color: #303030;
   font-size: 1.06em;
+  font: 1.06em "Lato", sans-serif;
   text-transform: uppercase;
   padding: 0 4%;
 }
 nav img {
   max-width: 140px;
+}
+/*footer styling*/
+footer {
+  background-color: #be5f27;
+  font-size: .9em;
+  font: .9em "Oswald", sans-serif;
+  color: #f2f2f2;
+}
+.footer-address,
+.footer-image,
+.footer-contact {
+  padding: 0 5%;
+}
+.footer-address, .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-address {
+  text-transform: uppercase;
+}
+.footer-address p:last-child,
+.footer-contact p {
+  padding-top: 20px;
+}
+.footer-hours {
+  text-transform: capitalize;
+}
+footer img {
+  max-width: 100px;
+}
+.footer-social img {
+  max-height: 38px;
+  margin: 0 10px;
 }
