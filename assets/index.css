@@ -25,9 +25,13 @@ nav, footer {
   height: 215px;
 }
 /*nav bar styling*/
+header {
+  background: #f2f2f2 url("images/fix-index-hero.jpg") no-repeat left top;
+  height: 815px;
+}
 nav {
   background-color: #f2f2f2;
-  opacity: ;
+  opacity: .9;
   }
 nav p {
   color: #303030;
@@ -39,6 +43,7 @@ nav p {
 nav img {
   max-width: 140px;
 }
+
 /*footer styling*/
 footer {
   background-color: #be5f27;
