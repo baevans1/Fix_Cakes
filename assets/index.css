@@ -14,14 +14,22 @@ html {
   max-width: 90%;
   margin: 0 auto;
 }
-h1, h2 {
-font-family: "Oswald", sans-serif;
-}
 h3, h4, p {
 font-family: "Lato", sans-serif;
 }
 img {
   max-width: 100%;
+}
+h1{
+  font-family: "Oswald", sans-serif;
+  color: #f2f2f2;
+}
+h2 {
+font-family: "Oswald", sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+text-align: center;
+color: #c3bbac;
 }
 /*nav & footer styling*/
 nav, footer {
@@ -38,8 +46,6 @@ header {
 nav {
   background-color: #f2f2f2;
   opacity: .9;
-  position: fixed;
-  width: 90%;
   }
 nav p {
   color: #303030;
@@ -79,40 +85,80 @@ footer p{
 .footer-hours {
   text-transform: capitalize;
 }
-footer img {
-  max-width: 100px;
+.footer-image {
+  width: 100px;
 }
 .footer-social img {
-  max-height: 38px;
+  height: 38px;
   margin: 0 10px;
 }
 /*styling of main article and cake types*/
 main {
   display: flex;
 }
-article, .cake-types {
-  width: 50%;
-
+.get-your-fix h1 {
+  position: absolute;
+  left: 42.75%;
+  text-transform: capitalize;
+  background-color: #d49b30;
+  font-size: 2.1rem;
+  padding: 5px 15px;
 }
-article {
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
+.about-fix, .cake-types {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 70px;
+}
+.about-fix {
+  font: 1rem/1.6rem "Lato", sans-serif;
   color: #303030;
-  line-height: 1.6em;
+  padding-top: 150px;
+  }
+.about-fix a {
+  text-decoration: none;
+  font: italic bold 1em "Lato", sans-serif;
+  color: #be5f27;
 }
 .cake-types {
-  text-transform: uppercase;
-  font-size: 3.25em;
-  line-height: .8em;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  color: #f2f2f2;
   background-color: #c3bbac;
-  padding: 60px 0;
-
+}
+.cake-types h2 {
+  font-size: 3.25rem;
+  line-height: 2.5rem;
+  color: #f2f2f2;
 }
 .cake-types img {
   width: 80px;
   margin-bottom: 20px;
+}
+.hours-bar {
+  background-color: #8e5942;
+  display: flex;
+  justify-content: center;
+  font-size: 2.1rem;
+}
+.hours-bar h1 {
+  padding: 85px 6%;
+}
+span.days {
+  font-weight: lighter;
+}
+span.hours {
+  font-weight: bold;
+}
+/*cake pics styling */
+.cake-pics {
+  display: flex;
+  align-items: center;
+}
+.middle {
+  flex-direction: row-reverse;
+}
+.cake-pics-text {
+  width: 30%;
+  font-size: 2.5rem;
+  line-height: 2rem;
+}
+.cake-pics-text img {
+  height: 80px;
 }
