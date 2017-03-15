@@ -50,7 +50,8 @@ nav {
 nav p {
   font-size: 1.06em;
   text-transform: uppercase;
-  padding: 0 4%;
+  padding: 5px;
+  margin: 0 3.3%;
 }
 nav a {
   text-decoration: none;
@@ -58,6 +59,14 @@ nav a {
 }
 nav img {
   width: 95%;
+}
+/*current page highlight*/
+p.current-page  {
+  padding-top: 9px;
+  border-bottom: 4px solid #d49b30;
+}
+p.current-page a {
+  color: #d49b30;
 }
 
 /*footer styling*/
@@ -99,11 +108,13 @@ footer p{
 main {
   display: flex;
 }
-.fixed-button h1 {
+.fixed-button {
   position: absolute;
   left: 42.75%;
-  text-transform: capitalize;
   background-color: #d49b30;
+}
+.fixed-button h1, .fixed-reverse h1 {
+  text-transform: capitalize;
   font-size: 2.1rem;
   padding: 5px 15px;
 }
@@ -117,7 +128,7 @@ main {
   color: #303030;
   padding-top: 140px;
   }
-.about-fix a {
+.about-fix a, .cake-menu .cake-types a {
   text-decoration: none;
   font: italic bold 1em "Lato", sans-serif;
   color: #be5f27;
@@ -174,7 +185,7 @@ span.hours, span.custom-question {
   background: #f2f2f2 url("images/fix-hours-hero.jpg") no-repeat left top;
   height: 405px;
   }
-#hours-page .fixed-button h1 {
+#hours-page .fixed-button {
   left: 45.85%;
   }
 .open-times {
@@ -193,4 +204,39 @@ span.hours, span.custom-question {
 .link-to-custom a {
   font-style: italic;
   color: #f2f2f2;
+}
+/*cake menu page styling */
+.cake-menu header {
+  background: #f2f2f2 url("images/fix-menu-hero.jpg") no-repeat left top;
+  height: 405px;
+}
+.cake-menu .fixed-button {
+  left: 41.2651369%;
+}
+.fixed-reverse {
+  position: absolute;
+  right: 41.2651369%;
+  background-color: #f2f2f2;
+}
+.fixed-reverse h1 {
+  color: #d49b30;
+}
+.cake-menu .cake-types {
+  width: 63%;
+  margin: 0 auto;
+  padding: 135px;
+}
+.cake-menu h3 {
+  text-transform: uppercase;
+  color: #8e5942;
+  font-weight: bolder;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.cake-menu .cake-types p {
+  line-height: 1.6rem;
+}
+.cake-selection {
+  padding: 40px 0;
+  border-bottom: 1px solid #f2f2f2;
 }
