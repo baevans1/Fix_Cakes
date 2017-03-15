@@ -225,6 +225,7 @@ span.hours, span.custom-question {
   width: 63%;
   margin: 0 auto;
   padding: 135px;
+  background-color: #e0d7c5;
 }
 .cake-menu h3 {
   text-transform: uppercase;
