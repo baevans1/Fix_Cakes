@@ -54,7 +54,7 @@ nav p {
   padding: 0 4%;
 }
 nav img {
-  max-width: 140px;
+  width: 95%;
 }
 
 /*footer styling*/
@@ -86,10 +86,10 @@ footer p{
   text-transform: capitalize;
 }
 .footer-image {
-  width: 100px;
+  width: 8.3%;
 }
 .footer-social img {
-  height: 38px;
+  width: 19%;
   margin: 0 10px;
 }
 /*styling of main article and cake types*/
@@ -128,7 +128,7 @@ main {
   color: #f2f2f2;
 }
 .cake-types img {
-  width: 80px;
+  width: 17.13%;
   margin-bottom: 20px;
 }
 .hours-bar {
@@ -159,6 +159,9 @@ span.hours {
   font-size: 2.5rem;
   line-height: 2rem;
 }
+.cake-pics img {
+  width: 70%;
+}
 .cake-pics-text img {
-  height: 80px;
+  width: 21.97%;
 }
