@@ -113,10 +113,18 @@ main {
   left: 42.75%;
   background-color: #d49b30;
 }
-.fixed-button h1, .fixed-reverse h1 {
+.fixed-button h1,
+.fixed-reverse h1,
+.fixed-reverse a,
+.fixed-button a {
   text-transform: capitalize;
+  text-decoration: none;
   font-size: 2.1rem;
   padding: 5px 15px;
+}
+.fixed-button h1,
+.fixed-reverse a {
+  color: #f2f2f2;
 }
 .about-fix, .cake-types {
   box-sizing: border-box;
@@ -211,14 +219,17 @@ span.hours, span.custom-question {
   height: 405px;
 }
 .cake-menu .fixed-button {
-  left: 41.2651369%;
+  left: 39%;
 }
-.fixed-reverse {
+.fixed-button a {
+  color: #f2f2f2;
+}
+.cake-menu .fixed-reverse {
   position: absolute;
-  right: 41.2651369%;
+  right: 39%;
   background-color: #f2f2f2;
 }
-.fixed-reverse h1 {
+.fixed-reverse a {
   color: #d49b30;
 }
 .cake-menu .cake-types {
@@ -240,4 +251,20 @@ span.hours, span.custom-question {
 .cake-selection {
   padding: 40px 0;
   border-bottom: 1px solid #f2f2f2;
+}
+.cake-selection:last-child {
+  border-bottom: none;
+}
+/*button color swap */
+.other .fixed-button {
+  background-color: #f2f2f2;
+}
+.other .fixed-button a {
+  color: #d49b30;
+}
+.other .fixed-reverse {
+  background-color: #d49b30;
+}
+.other .fixed-reverse a {
+  color: #f2f2f2;
 }
