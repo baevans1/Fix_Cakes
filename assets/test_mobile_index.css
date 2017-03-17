@@ -1,0 +1,147 @@
+/*resets browser default styles*/
+html, body, h1, h2, h3, h4, p, a   {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+html {
+  font-size: 20px;
+}
+
+/*  web fonts
+font-family: 'Oswald', sans-serif;
+font-family: 'Lato', sans-serif;
+   COLORS
+burnt orange  #be5f27
+brown  #8e5942
+light brown  #c3bbac
+golden  #d49b30
+light tan  #e0d7c5
+off-white  #f2f2f2
+black  #303030
+*/
+
+/*media query starting with iphone 5*/
+
+@media screen and (min-width: 320px) {
+    /*main styles for pages*/
+       /*typography*/
+h1,
+h2,
+footer p {
+  font: 2.1rem "Oswald", sans-serif;
+}
+h2 {
+ font-size: 1.56rem;
+ text-transform: uppercase;
+}
+.cake-types h2 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  line-height: 2.75rem;
+}
+h3,
+h4,
+p {
+  font-family: 1.125rem "Lato", sans-serif;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+h3, h4 {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+h4 {
+  font-weight: lighter;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+  p a {
+    font-weight: bold;
+    font-style: italic;
+  }
+  p a:hover {
+    text-decoration: underline;
+  }
+  nav p {
+    font-size: 1.06rem;
+  }
+  footer p {
+    font-size: .9rem;
+  }
+      /*end of typography*/
+      /*-----colors------*/
+
+h1,
+h2,
+footer p {
+  color: #f2f2f2;
+}
+.flex-text h2 {
+  color: #c3bbac;
+}
+p {
+  color: #303030;
+}
+h2 a:hover,
+p a:hover {
+  color: #d49b3c;
+}
+h3,
+h4 {
+  color: #8e5942;
+}
+p a {
+color: #be5f27;
+}
+h1 {
+  background-color: #d49b30;
+}
+.cake-types {
+  background-color: #c3bbac;
+}
+.middle-bar h1 {
+  background-color: #8e5942;
+}
+footer {
+  background-color: #be5f27;
+}
+      /*end of colors*/
+    /*----layout-----*/
+header {
+  background: #f2f2f2 url("images/fix-index-hero.jpg") no-repeat left top;
+  height: 650px;
+}
+.about-fix {
+  padding: 70px;
+}
+.cake-types {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+}
+.cake-types img {
+  height: 85px;
+  margin-bottom: 30px;
+}
+.flex-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.flex-text {
+  display: flex;
+  justify-content: center;
+}
