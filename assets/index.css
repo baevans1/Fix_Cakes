@@ -153,6 +153,7 @@ main {
   width: 17.13%;
   margin-bottom: 20px;
 }
+
 .middle-bar {
   background-color: #8e5942;
   display: flex;
@@ -267,4 +268,8 @@ span.hours, span.custom-question {
 }
 .other .fixed-reverse a {
   color: #f2f2f2;
+}
+/*working with javascript*/
+.cake-types.other {
+  display: none;
 }
