@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, p {
+html, body, h1, h2, h3, h4, p, button {
   padding: 0;
   border: 0;
   margin: 0;
@@ -20,7 +20,8 @@ font-family: "Lato", sans-serif;
 img {
   max-width: 100%;
 }
-h1{
+h1,
+button {
   font-family: "Oswald", sans-serif;
   color: #f2f2f2;
 }
@@ -108,24 +109,17 @@ footer p{
 main {
   display: flex;
 }
-.fixed-button {
+.button-cakes {
   position: absolute;
   left: 42.75%;
-  background-color: #d49b30;
 }
-.fixed-button h1,
-.fixed-reverse h1,
-.fixed-reverse a,
-.fixed-button a {
+.button-cakes h1,
+.button-other h1 {
   text-transform: capitalize;
-  text-decoration: none;
   font-size: 2.1rem;
   padding: 5px 15px;
 }
-.fixed-button h1,
-.fixed-reverse a {
-  color: #f2f2f2;
-}
+
 .about-fix, .cake-types {
   box-sizing: border-box;
   width: 50%;
@@ -194,7 +188,7 @@ span.hours, span.custom-question {
   background: #f2f2f2 url("images/fix-hours-hero.jpg") no-repeat left top;
   height: 405px;
   }
-#hours-page .fixed-button {
+#hours-page .button-cakes {
   left: 45.85%;
   }
 .open-times {
@@ -219,19 +213,12 @@ span.hours, span.custom-question {
   background: #f2f2f2 url("images/fix-menu-hero.jpg") no-repeat left top;
   height: 405px;
 }
-.cake-menu .fixed-button {
-  left: 39%;
+.cake-menu .button-cakes {
+  left: 41.5%;
 }
-.fixed-button a {
-  color: #f2f2f2;
-}
-.cake-menu .fixed-reverse {
+.cake-menu .button-other {
   position: absolute;
-  right: 39%;
-  background-color: #f2f2f2;
-}
-.fixed-reverse a {
-  color: #d49b30;
+  right: 41.5%;
 }
 .cake-menu .cake-types {
   width: 63%;
@@ -257,19 +244,16 @@ span.hours, span.custom-question {
   border-bottom: none;
 }
 /*button color swap */
-.other .fixed-button {
-  background-color: #f2f2f2;
-}
-.other .fixed-button a {
-  color: #d49b30;
-}
-.other .fixed-reverse {
-  background-color: #d49b30;
-}
-.other .fixed-reverse a {
-  color: #f2f2f2;
-}
+
 /*working with javascript*/
 .cake-types.other {
   display: none;
+}
+.disabled {
+  color: #d49b30;
+  background-color: #f2f2f2;
+}
+.highlighted {
+  color: #f2f2f2;
+  background-color: #d49b30;
 }
