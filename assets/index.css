@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, p, button {
+html, body, h1, h2, h3, h4, p, label, input {
   padding: 0;
   border: 0;
   margin: 0;
@@ -14,14 +14,13 @@ html {
   max-width: 90%;
   margin: 0 auto;
 }
-h3, h4, p {
+h3, h4, p, label, input {
 font-family: "Lato", sans-serif;
 }
 img {
   max-width: 100%;
 }
-h1,
-button {
+h1 {
   font-family: "Oswald", sans-serif;
   color: #f2f2f2;
 }
@@ -75,7 +74,7 @@ footer {
   background-color: #be5f27;
   color: #f2f2f2;
 }
-footer p{
+footer p {
   font: .9em "Oswald", sans-serif;
 }
 .footer-address,
@@ -109,12 +108,14 @@ footer p{
 main {
   display: flex;
 }
-.button-cakes {
+.button-cakes,
+.fixed-button {
   position: absolute;
   left: 42.75%;
 }
 .button-cakes h1,
-.button-other h1 {
+.button-other h1,
+.fixed-button h1 {
   text-transform: capitalize;
   font-size: 2.1rem;
   padding: 5px 15px;
@@ -188,7 +189,7 @@ span.hours, span.custom-question {
   background: #f2f2f2 url("images/fix-hours-hero.jpg") no-repeat left top;
   height: 405px;
   }
-#hours-page .button-cakes {
+#hours-page .fixed-button {
   left: 45.85%;
   }
 .open-times {
@@ -213,38 +214,74 @@ span.hours, span.custom-question {
   background: #f2f2f2 url("images/fix-menu-hero.jpg") no-repeat left top;
   height: 405px;
 }
-.cake-menu .button-cakes {
+.cake-menu .button-cakes,
+ #custom-page .fixed-button {
   left: 41.5%;
 }
 .cake-menu .button-other {
   position: absolute;
   right: 41.5%;
 }
-.cake-menu .cake-types {
+.cake-menu .cake-types,
+#custom-page .cake-types {
   width: 63%;
   margin: 0 auto;
   padding: 135px;
   background-color: #e0d7c5;
 }
-.cake-menu h3 {
+.cake-menu h3,
+#custom-page h3 {
   text-transform: uppercase;
   color: #8e5942;
   font-weight: bolder;
   font-size: 1.125rem;
   line-height: 2rem;
 }
-.cake-menu .cake-types p {
+.cake-menu .cake-types p,
+#custom-page .cake-types p,
+#custom-page label,
+#custom-page input {
   line-height: 1.6rem;
 }
 .cake-selection {
   padding: 40px 0;
   border-bottom: 1px solid #f2f2f2;
 }
-.cake-selection:last-child {
+.cake-selection:last-of-type {
   border-bottom: none;
 }
-/*button color swap */
-
+/*custom page */
+#custom-page header {
+  background: #f2f2f2 url("images/fix-custom-hero.jpg") no-repeat left top;
+  height: 405px;
+  }
+#custom-page span {
+  font-weight: bold;
+}
+#custom-page form {
+  display: flex;
+  flex-direction: column;
+}
+#custom-page label,
+#custom-page input[type=submit] {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+#custom-page input,
+#custom-page textarea {
+  width: 500px;
+}
+#custom-page input[type=submit] {
+  align-self: center;
+  background-color: #be5f27;
+  border: none;
+  box-shadow: 5px 5px 5px #888;
+  color: #f2f2f2;
+  padding: 10px;
+  width: 25%;
+}
 /*working with javascript*/
 .cake-types.other {
   display: none;
