@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="assets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900|Oswald:300,400,700"
           rel="stylesheet">
-    <script src="script.js"></script>
+
+
   </head>
   <body id="custom-page">
     <!-- page content -->
@@ -67,19 +68,27 @@
             here to guide you. Let us know what you're thinking.
           </p>
         </div>
+        <div class="cake-selection" id="after-form">
+          <h3>your information has been submitted</h3>
+          <p>Thank you for thinking of Fix for your
+            custom cake needs! Someone will get ahold
+            of you within 24 hours to chat further about
+            your request.
+          </p>
+        </div>
 
         <form>
           <label>Name</label>
-            <input type = "text" name="firstlastname" required>
+            <input type = "text" name="firstname" >
           <label>E-mail</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" >
           <label>Phone number</label>
-            <input type="tel" name="usrtel" required>
+            <input type="tel" name="usrtel" >
           <label>The details</label>
-            <textarea name="message" rows="10" cols="140" required>
+            <textarea name="message" rows="10" cols="140" >
             </textarea>
 
-          <input type="submit">
+          <input type="submit" id="submit">
 
         </form>
       </section>
@@ -111,4 +120,6 @@
     </footer>
 
   </body>
+  <script src="assets/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/script.js"></script>
 </html>
