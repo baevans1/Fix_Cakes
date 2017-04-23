@@ -1,4 +1,15 @@
 $(document).ready(function(){
+  $(window).scroll(function() {
+      var topOffset = $(window).scrollTop();
+      if(topOffset == 0){
+        $(".nav-img").removeClass("shrink-nav");
+        $("nav").removeClass("scroll-nav");
+    } else {
+        $(".nav-img").addClass("shrink-nav");
+        $("nav").addClass("scroll-nav");
+    }
+  });
+
   $(".button-cakes").on('click', 'h1', function() {
     $(".button-cakes").children().removeClass("disabled").addClass("highlighted");
     $(".button-other").children().removeClass("highlighted").addClass("disabled");

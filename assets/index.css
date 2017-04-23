@@ -47,6 +47,8 @@ header {
 nav {
   background-color: #f2f2f2;
   opacity: .9;
+  z-index: 2;
+  transition: height .4s linear;
   }
 nav p {
   font-size: 1.06em;
@@ -59,7 +61,8 @@ nav a {
   color: #303030;
 }
 nav img {
-  width: 95%;
+  transform: scale(.95);
+  transition: transform .4s linear;
 }
 /*current page highlight*/
 p.current-page  {
@@ -113,6 +116,7 @@ main {
 .fixed-button {
   position: absolute;
   left: 42.75%;
+  z-index: 1;
 }
 .button-cakes h1,
 .button-other h1,
@@ -298,4 +302,17 @@ span.hours, span.custom-question {
 .highlighted {
   color: #f2f2f2;
   background-color: #d49b30;
+}
+
+.shrink-nav {
+  transform: scale(.5);
+  transition: transform .4s linear;
+}
+
+.scroll-nav {
+  position: fixed;
+  top: 0;
+  height: 112px;
+  width: 90%;
+  transition: height .4s linear;
 }
