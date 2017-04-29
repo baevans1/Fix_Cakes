@@ -1,4 +1,30 @@
 $(document).ready(function(){
+  $("header").html("<nav>" +
+        "<p><a href='fix_menu.html'>menu</a></p>" +
+        "<p><a href='fix_custom.html'>custom</a></p>" +
+        "<p><a href='index.html'>" +
+            "<img class='nav-img' src='assets/images/fix-logo.png'>" +
+          "</a>" +
+        "</p>" +
+        "<p><a href='fix_about.html'>about</a></p>" +
+        "<p><a href='fix_hours.html'>hours</a></p>" +
+      "</nav>");
+  $("footer").html("<div class='footer-address'>" +
+            "<p>27 maryland plaza</p>" +
+            "<p>saint louis, mo 63108</p>" +
+            "<div class='footer-hours'>" +
+              "<p>tues-sat 7am-7pm, sun 11am-4pm</p>" +
+            "</div>" +
+          "</div>" +
+        "<img class='footer-image' src='assets/images/fix-logo-white.png'>" +
+        "<div class='footer-contact'>" +
+          "<div class='footer-social'>" +
+            "<img src='assets/images/fix-fbicon.png'>" +
+            "<img src='assets/images/fix-twittericon.png'>" +
+            "<img src='assets/images/fix-instaicon.png'>" +
+          "</div>" +
+          "<p>314-930-3103</p>" +
+      "</div>");
   $(window).scroll(function() {
       var topOffset = $(window).scrollTop();
       if(topOffset == 0){
