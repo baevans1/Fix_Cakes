@@ -1,12 +1,12 @@
 [
   {
     "name": "Cookies",
-    "description": "Chocolate chip or Snickerdoodle.",
+    "description": "Chocolate Chip or Snickerdoodle.",
     "type": "Other"
   },
   {
     "name": "Chocolate Cake",
-    "description": "A rich moist chocolate cake with a chocolate buttercream icing. Most, delicious and everything in between.",
+    "description": "A rich moist chocolate cake with a chocolate buttercream icing. Moist, delicious and everything in between.",
     "type": "Cake"
   },
   {

@@ -253,9 +253,10 @@ span.hours, span.custom-question {
   padding: 40px 0;
   border-bottom: 1px solid #f2f2f2;
 }
-.cake-selection:last-of-type {
+.cake-selection.custom {
   border-bottom: none;
 }
+
 /*custom page */
 #custom-page header {
   background: #f2f2f2 url("images/fix-custom-hero.jpg") no-repeat left top;

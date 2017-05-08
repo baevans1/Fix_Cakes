@@ -62,4 +62,31 @@ $(document).ready(function(){
    $("form").submit(function(event){
       event.preventDefault();
     });
+
+  var requestURL = "https://raw.githubusercontent.com/baevans1/web_group_project_2/master/inventory.json";
+  $.getJSON( requestURL, function(bakeryItem) {
+    var cakeItems = [];
+    var otherItems = [];
+    $.each(bakeryItem, function (i, val) {
+      if (bakeryItem[i].type == "Cake") {
+        cakeItems.push(bakeryItem[i])
+      }  else {
+        otherItems.push(bakeryItem[i])
+      };
+    });
+  cakeItems = $.map(cakeItems, function( a, i ) {
+   return ("<div class='cake-selection'>" +
+    "<h3>" + cakeItems[i].name + "</h3>" +
+    "<p>" + cakeItems[i].description + "</p>" +
+    "</div>" );
+   });
+  $( ".test" ).html(cakeItems);
+  otherItems = $.map(otherItems, function( a, i ) {
+   return ("<div class='cake-selection'>" +
+    "<h3>" + otherItems[i].name + "</h3>" +
+    "<p>" + otherItems[i].description + "</p>" +
+    "</div>" );
+   });
+  $( ".test2" ).html(otherItems);
+  });
 });
