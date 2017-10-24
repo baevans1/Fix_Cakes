@@ -118,6 +118,10 @@ main {
   left: 42.75%;
   z-index: 1;
 }
+.button-other,
+.button-cakes {
+  cursor:pointer;
+}
 .button-cakes h1,
 .button-other h1,
 .fixed-button h1 {
@@ -126,17 +130,24 @@ main {
   padding: 5px 15px;
 }
 
-.about-fix, .cake-types {
+.about-fix,
+.cake-types {
   box-sizing: border-box;
   width: 50%;
   padding: 70px;
-}
-.about-fix {
   font: 1rem/1.6rem "Lato", sans-serif;
   color: #303030;
+}
+#about-page .about-fix {
+  padding: 110px 70px 30px;
+}
+#main .about-fix {
   padding-top: 140px;
   }
-.about-fix a, .cake-menu .cake-types a {
+.about-fix a,
+.cake-menu .cake-types a,
+span.link
+ {
   text-decoration: none;
   font: italic bold 1em "Lato", sans-serif;
   color: #be5f27;
@@ -163,7 +174,9 @@ main {
   padding: 85px 5%;
   font-size: 2.1rem;
 }
-span.days, span.link-to-custom {
+span.days,
+span.link-to-custom,
+span.lighter {
   font-weight: lighter;
 }
 span.hours, span.custom-question {
@@ -235,7 +248,8 @@ span.hours, span.custom-question {
   background-color: #e0d7c5;
 }
 .cake-menu h3,
-#custom-page h3 {
+#custom-page h3,
+#about-page h3 {
   text-transform: uppercase;
   color: #8e5942;
   font-weight: bolder;
@@ -316,4 +330,19 @@ span.hours, span.custom-question {
   height: 112px;
   width: 90%;
   transition: height .4s linear;
+}
+/*about page styling*/
+#about-page header {
+  background: #f2f2f2 url("images/fix-about-hero.jpg") no-repeat left top;
+  height: 405px;
+  }
+.about-bakers {
+  padding: 0;
+  background-color: #c3bbac;
+}
+#right-align {
+  text-align: right;
+}
+#about-page .fixed-button {
+ left: 39.5%;
 }
